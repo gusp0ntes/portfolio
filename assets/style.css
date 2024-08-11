@@ -86,7 +86,7 @@ header {
     border-bottom: 3px solid var(--secondary-color) ;
 }
 
-#menu-icon {
+#menu-icon,#x-icon {
     font-size: 3.6rem;
     color: var(--secondary-color);
     display: none;

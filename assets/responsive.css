@@ -1,4 +1,19 @@
 @media screen and (max-width: 767px) {
+
+    ::-webkit-scrollbar {
+        width: 15px;
+        display: none;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--secondary-color);
+    }
+    
+    ::-webkit-scrollbar-track {
+        background-color: var(--primary-color);
+        width: 50px;
+    }
+    
     .logo {
         font-size: 2rem;
     }
@@ -11,10 +26,14 @@
     #menu-icon {
         display: block;
         cursor: pointer;
+        font-size: 3.6rem;
+        color: var(--secondary-color);
+        z-index: 1001;
     }
 
     .navbar {
-        display: none; /* Esconder navbar em telas pequenas */
+        display: none;
+        /* Esconder navbar em telas pequenas */
         flex-direction: column;
         background: var(--primary-color);
         position: fixed;
@@ -25,10 +44,12 @@
         align-items: center;
         justify-content: center;
         z-index: 4;
+        transition: all 0.3s ease-in-out;
     }
 
     .navbar.active {
-        display: flex; /* Mostrar navbar quando estiver ativo */
+        display: flex;
+        /* Mostrar navbar quando estiver ativo */
     }
 
     .navbar a {
