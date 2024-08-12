@@ -1,0 +1,46 @@
+.projects-box {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.projects-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
+    margin-right: 10px;
+
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 2rem ;
+}
+
+
+.projects-info h2 {
+    font-size: 2.3rem;
+    padding-bottom: 1rem;
+}
+
+.projects-info p {
+   font-size: 1.4rem;
+   text-align: justify;
+}
+
+.projects-info a {
+    text-align: center;
+}
+
+.tecnologias {
+    padding: 2rem 0px 2rem 0px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.tecnologias i {
+    font-size: 4.2rem;
+    transition: all 0.3s ease-in-out;
+}

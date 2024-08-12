@@ -5,9 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="assets/responsive.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/global.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/projects.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Gustavo Pontes - Portfolio online</title>
 </head>
 
 <body>
@@ -18,7 +24,7 @@
 
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
-            <a href="#project">Project</a>
+            <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
             <i class='bx bx-x' id="x-icon"></i>
         </nav>
@@ -36,15 +42,16 @@
             </p>
 
             <div class="social-icons">
-                <a href="#"><i class='bx bxl-linkedin' style='color:#ffffff'></i></a>
-                <a href="#"><i class='bx bxl-github' style='color:#ffffff'></i></a>
+                <a href="https://www.linkedin.com/in/gustavo-pontes-da-silva-848520263/" target="_blank">
+                    <i class='bx bxl-linkedin' style='color:#ffffff'></i>
+                </a>
+                <a href="https://github.com/gusp0ntes" target="_blank"> 
+                    <i class='bx bxl-github' style='color:#ffffff'></i>
+                </a>
             </div>
 
             <div class="btn-group">
-                <a href="#" class="btn">Hire</a>
-
-                <a href="#contact" class="btn">Contact</a>
-
+                <a href="../site/assets/files/file.pdf" download="Gustavo Pontes da Silva - Curriculo" class="btn">Download CV</a>
             </div>
         </div>
 
@@ -54,11 +61,138 @@
 
     </section>
 
-    <section class="project" id="project">
-
+    <section class="projects" id="projects">
+        <h2 class="heading">Projects</h2>
+        <div class="projects-container">
+            <div class="projects-box">
+                <div class="projects-info">
+                    <img src="#" alt="project-img">
+                    <h2>Connect Rio - Freelance</h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
+                        unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only 
+                        five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised 
+                        in the 1960s with the release of Letraset 
+                        sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker 
+                        including versions of Lorem Ipsum.
+                    </p>
+                    <div class="tecnologias">
+                        <i class='bx bxl-html5'></i>
+                        <i class='bx bxl-css3'></i>
+                        <i class='bx bxl-javascript'></i>
+                        <i class='bx bxl-wordpress'></i>
+                    </div>
+                    <a href="#" class="btn">Ver site</a>
+                </div>
+                <div class="projects-info">
+                    <img src="#" alt="project-img">
+                    <h2>Site de Telecomunições - Faculdade</h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
+                        unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only 
+                        five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised 
+                        in the 1960s with the release of Letraset 
+                        sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker 
+                        including versions of Lorem Ipsum.
+                    </p>
+                    <div class="tecnologias">
+                        <i class='bx bxl-html5'></i>
+                        <i class='bx bxl-css3'></i>
+                        <i class='bx bxl-javascript'></i>
+                    </div>
+                    <a href="#" class="btn">Ver site</a>
+                </div>
+                <div class="projects-info">
+                    <img src="#" alt="project-img">
+                    <h2>Aplicativo Mobile - Faculdade</h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
+                        unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only 
+                        five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised 
+                        in the 1960s with the release of Letraset 
+                        sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker 
+                        including versions of Lorem Ipsum.
+                    </p>
+                    <div class="tecnologias">
+                        <i class='bx bxl-android'></i>
+                        <i class='bx bxl-angular'></i>
+                        <i class='bx bxl-sass'></i>
+                        <i class='bx bxl-typescript'></i>
+                        <i class='bx bxl-nodejs' style='color:#ffffff' ></i>
+                        <i class="fa-brands fa-npm"></i>
+                    </div>
+                    <a href="#" class="btn">Ver site</a>
+                </div>
+                <div class="projects-info">
+                    <img src="#" alt="project-img">
+                    <h2>Site de Telecomunições com Banco de dados - Faculdade</h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
+                        unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only 
+                        five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised 
+                        in the 1960s with the release of Letraset 
+                        sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker 
+                        including versions of Lorem Ipsum.
+                    </p>
+                    <div class="tecnologias">
+                        <i class='bx bxl-html5'></i>
+                        <i class='bx bxl-css3'></i>
+                        <i class='bx bxl-javascript'></i>
+                        <i class='bx bxl-php'></i>
+                        <i class='bx bxs-data'></i>
+                    </div>
+                    <a href="#" class="btn">Ver site</a>
+                </div>
+                <div class="projects-info">
+                    <img src="#" alt="project-img">
+                    <h2>Serviço de Agendamento Online</h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
+                        unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only 
+                        five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised 
+                        in the 1960s with the release of Letraset 
+                        sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker 
+                        including versions of Lorem Ipsum.
+                    </p>
+                    <div class="tecnologias">
+                        <i class='bx bxl-html5' style='color:#ffffff' ></i>
+                        <i class='bx bxl-css3' style='color:#ffffff' ></i>
+                        <i class='bx bxl-wordpress'></i>
+                        <i class='bx bxl-whatsapp'></i>
+                        <i class='bx bx-globe' style='color:#ffffff' ></i>
+                    </div>
+                    <a href="#" class="btn">Ver site</a>
+                </div>
+                <div class="projects-info">
+                    <img src="#" alt="project-img">
+                    <h2>Portfólio</h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
+                        unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only 
+                        five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised 
+                        in the 1960s with the release of Letraset 
+                        sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker 
+                        including versions of Lorem Ipsum.
+                    </p>
+                    <div class="tecnologias">
+                        <i class='bx bxl-html5'></i>
+                        <i class='bx bxl-css3'></i>
+                        <i class='bx bxl-javascript'></i>
+                        <i class='bx bxl-github'></i>
+                    </div>
+                    <a href="#" class="btn">Ver site</a>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <script src="assets/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
