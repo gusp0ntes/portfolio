@@ -1,3 +1,13 @@
+:root {
+    --primary-color: #1c1b29; 
+    --secondary-color: #b39ddb; 
+    --tertiary-color: #302f3f; 
+    --ter-color: #b39ddb; 
+    --text-color: #e0e0e0; 
+    --accent-color: #6a0dad; 
+    --hover-color: #3e3352;
+}
+
 @keyframes cursor {
     to {
         border-left: 2px solid var(--secondary-color);
@@ -71,6 +81,29 @@ body {
     color: var(--text-color);
 }
 
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--secondary-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #000;
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-project {
+    border-radius: 5px;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 50px var(--secondary-color);
+}
+
 header {
     position: fixed;
     top: 0;
@@ -129,8 +162,21 @@ header {
 
 section {
     min-height: 100vh;
-    padding: 10rem 12% 10rem;
+    padding: 10rem 20rem;
 }
+
+section:nth-child(2) {
+    padding-bottom: 0rem;
+    background-image: url(../assets/img/3871125b4f099cce4cdbcdda93cb2775e70ffdda.pdf.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+section:nth-child(3) {
+    background-color: var(--tertiary-color);
+}
+
+
 
 .heading {
     font-size: 8rem;

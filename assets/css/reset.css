@@ -6,11 +6,3 @@
     font-weight: 700;
     text-decoration: none;
 }
-
-:root {
-    --primary-color: #1c1b29; /* Preto com leve tom roxo */
-    --secondary-color: #b39ddb; /* Roxo forte */
-    --text-color: #e0e0e0; /* Cinza claro para texto */
-    --accent-color: #6a0dad; /* Roxo claro para destaque */
-    --hover-color: #3e3352; /* Tom mais escuro para hover */
-}

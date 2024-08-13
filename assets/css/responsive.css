@@ -13,6 +13,10 @@
         background-color: var(--primary-color);
         width: 50px;
     }
+
+    section {
+        padding: 10rem 3rem;
+    }
     
     .logo {
         font-size: 2rem;

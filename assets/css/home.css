@@ -85,24 +85,6 @@ span {
     background-color: var(--secondary-color);
 }
 
-.btn {
-    display: inline-block;
-    padding: 1rem 2.8rem;
-    background: var(--secondary-color);
-    border-radius: 4rem;
-    font-size: 1.6rem;
-    color: #000;
-    border: 2px solid transparent;
-    letter-spacing: 0.1rem;
-    font-weight: 600;
-    transition: 0.3s ease-in-out;
-    cursor: pointer;
-}
-
-.btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 50px var(--secondary-color);
-}
 
 .btn-group {
     display: flex;
