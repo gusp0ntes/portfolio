@@ -126,15 +126,15 @@
     }
 
     .timeline-item {
-        padding-left: 30px;
+        
     }
 
     .timeline-item:nth-child(odd) {
-        padding-right: 20px;
+       padding: 20px;
     }
 
     .timeline-item:nth-child(even) {
-        padding-left: 20px;
+       padding: 20px;
     }
 
     footer {
