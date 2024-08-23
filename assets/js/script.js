@@ -18,18 +18,30 @@ window.onscroll = () => {
     });
 };
 
-// Toggle para o ícone do menu e navbar
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('rotated');
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 };
 
-// Fechar navbar ao clicar em um link
 navlinks.forEach(link => {
     link.onclick = () => {
         menuIcon.classList.remove('rotated');
         menuIcon.classList.remove('bx-x');
         navbar.classList.remove('active');
     };
+});
+
+
+document.getElementById("copyEmail").addEventListener("click", function () {
+    const email = "gustavopontes.dev@gmail.com";
+    navigator.clipboard.writeText(email).then(function () {
+        const tooltip = document.getElementById("tooltip");
+        tooltip.classList.add("show-tooltip");
+        setTimeout(function () {
+            tooltip.classList.remove("show-tooltip");
+        }, 2000);
+    }, function (err) {
+        console.error("Erro ao copiar o email:" + err);
+    });
 });

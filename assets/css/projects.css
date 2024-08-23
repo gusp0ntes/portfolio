@@ -8,9 +8,9 @@
 }
 
 .projects-info  img {
-    height: 280px;
+    height: 380px;
     width: 100%;
-    object-fit: cover;
+    object-fit:cover;
     border-radius: 20px;
     margin-bottom: 2rem;
 }
@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 40%;
+    width: 45%;
     margin-right: 10px;
     border-radius: 10px;
     padding: 3rem ;
@@ -28,16 +28,20 @@
     background-color: var(--primary-color);
 }
 
-.projects-info:hover {
-    background-color: var(--primary-color);
-    transform: scale(1.05);
-    border: 0px;
-}
-
-
 .projects-info h2 {
     font-size: 2.3rem;
     padding-bottom: 1rem;
+    position: relative;
+    margin: 10px 0px 10px 0px;
+}
+
+.projects-info h2::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 35px;
+    background-color: #fff;
 }
 
 .projects-info p {
@@ -58,5 +62,100 @@
 
 .tecnologias i {
     font-size: 4.2rem;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;                                                                                         
+}
+
+.tecnologias .bxl-html5:hover {
+    background: linear-gradient(to right, #E65100, #FF6D00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tecnologias .bxl-css3:hover {
+    background: linear-gradient(to right, #0277BD, #039BE5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tecnologias .bxl-javascript:hover {
+    background: linear-gradient(to right, #FFD600, #FFD600);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tecnologias .bxl-wordpress:hover {
+    background: linear-gradient(to right, #f2f2f2, #f2f2f2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tecnologias .bxl-php:hover {
+    background: linear-gradient(to right, #777BB4, #777BB4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.tecnologias .bxs-data:hover {
+    background: linear-gradient(to right, #11408A, #103F8F,#1D59B3,#195BBC,#3079D6,#297CD2,#42A3F2,#42A4EB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tecnologias .bxl-android:hover {
+    background: linear-gradient(to right, #30DC80, #30DC80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tecnologias .bxl-angular:hover {
+    background: linear-gradient(to right, #F44F5A, #EE3D4A,#E52030,#B31523,#000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tecnologias .bxl-sass:hover {
+    background: linear-gradient(to right, #CC6699,#CC6699);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tecnologias .bxl-typescript:hover {
+    background: linear-gradient(to right, #0D61A9,#0D61A9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tecnologias .bxl-nodejs:hover {
+    background: linear-gradient(to right, #21A366,#21A366);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tecnologias .fa-npm:hover {
+    background: linear-gradient(to right, #fff,#fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tecnologias .bxl-whatsapp:hover {
+    background: linear-gradient(to right, #25D366,#25D366);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tecnologias .bxl-github:hover {
+    background: linear-gradient(to right, #f2f2f2,#f2f2f2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tecnologias .bxl-firebase:hover {
+    background: linear-gradient(to right, #ffcb2e,#ffcb2e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tecnologias i:hover {
+    transform: scale(1.1);
 }

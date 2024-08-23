@@ -6,6 +6,7 @@
     --text-color: #e0e0e0; 
     --accent-color: #6a0dad; 
     --hover-color: #3e3352;
+
 }
 
 @keyframes cursor {
@@ -74,11 +75,13 @@
 html {
     font-size: 60%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
     background: var(--primary-color);
     color: var(--text-color);
+    overflow-x: hidden;
 }
 
 .btn {
@@ -162,12 +165,12 @@ header {
 
 section {
     min-height: 100vh;
-    padding: 10rem 20rem;
+    padding: 10rem 30rem;
 }
 
 section:nth-child(2) {
     padding-bottom: 0rem;
-    background-image: url(../assets/img/3871125b4f099cce4cdbcdda93cb2775e70ffdda.pdf.png);
+    background-image: url(../assets/img/onda-bottom.png);
     background-position: bottom;
     background-repeat: no-repeat;
 }
@@ -176,7 +179,15 @@ section:nth-child(3) {
     background-color: var(--tertiary-color);
 }
 
+section:nth-child(4) {
+    background-image: url(../assets/img/onda-top.png);
+    background-position: top;
+    background-repeat: no-repeat;
+}
 
+section:nth-child(5) {
+    background-color: var(--tertiary-color);
+}
 
 .heading {
     font-size: 8rem;
@@ -184,15 +195,44 @@ section:nth-child(3) {
     margin: 5rem 0;
 }
 
+
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 15px; 
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color); 
+    border-radius: 20px; 
 }
 
 ::-webkit-scrollbar-track {
-    background-color: var(--primary-color);
-    width: 50px;
+    background-color: transparent; 
+    border-radius: 20px;
 }
+
+footer {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: r;
+}
+
+
+footer nav a {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.social-icons-footer {
+    /* background-color: red; */
+    text-align: center;
+}
+
+.social-icons-footer  {
+    font-size: 1.5rem;
+
+}
+

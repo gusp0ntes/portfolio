@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="assets/global.css">
     <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="assets/css/projects.css">
+    <link rel="stylesheet" href="assets/css/education.css">
     <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <title>Gustavo Pontes - Portfolio online</title>
 </head>
 
@@ -24,8 +26,9 @@
 
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#projects">Projetos</a>
+            <a href="#education">Educação</a>
+            <a href="#contact">Contato</a>
             <i class='bx bx-x' id="x-icon"></i>
         </nav>
     </header>
@@ -35,10 +38,9 @@
             <h1>Olá, sou <span>Gustavo</span></h1>
             <h3 class="text-animation">Sou um <span></span></h3>
             <p>
-                Sou um desenvolvedor full stack de 19 anos e estou cursando Análise e Desenvolvimento de Sistemas (ADS).
-                Tenho uma paixão constante por aprender e me aprimorar. Estou sempre em busca de novos desafios e
-                oportunidades
-                para expandir meu conhecimento e habilidades.
+                Sou um desenvolvedor full stack, cursando Análise e Desenvolvimento de Sistemas (ADS). 
+                Tenho uma paixão contínua por aprendizado e 
+                aprimoramento. Estou sempre em busca de novos desafios e oportunidades para expandir meus conhecimentos e habilidades.
             </p>
 
             <div class="social-icons">
@@ -48,10 +50,15 @@
                 <a href="https://github.com/gusp0ntes" target="_blank"> 
                     <i class='bx bxl-github' style='color:#ffffff'></i>
                 </a>
+                <a id="copyEmail">
+                    <i class='bx bxl-gmail'></i>
+                    <span id="tooltip" class="tooltip">Copiado!</span>
+                </a>                
             </div>
 
             <div class="btn-group">
-                <a href="../site/assets/files/file.pdf" download="Gustavo Pontes da Silva - Curriculo" class="btn">Download CV</a>
+                <a href="../site/assets/files/file.pdf" download="Gustavo Pontes da Silva - Curriculo" class="btn" >Baixar Curriculo</a>
+                <a href="#contact" class="btn">Contact</a>
             </div>
         </div>
 
@@ -62,20 +69,19 @@
     </section>
 
     <section class="projects" id="projects">
-        <h2 class="heading">Projects</h2>
+        <h2 class="heading">Projetos</h2>
         <div class="projects-container">
             <div class="projects-box">
+
                 <div class="projects-info">
                     <img src="assets/img/connectrio-banner.png" alt="project-img">
                     <h2>Connect Rio - Freelance</h2>
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-                        unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only 
-                        five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised 
-                        in the 1960s with the release of Letraset 
-                        sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker 
-                        including versions of Lorem Ipsum.
+                        O projeto "Connect Rio" foi desenvolvido para oferecer uma plataforma moderna e 
+                        intuitiva que conecta profissionais autônomos com potenciais clientes na cidade do Rio de Janeiro. 
+                        Meu trabalho como freelancer envolveu desde o planejamento e design da interface até a 
+                        implementação das funcionalidades principais, garantindo uma experiência de usuário fluida e responsiva. 
+                        A plataforma foi projetada para ser facilmente gerenciável e escalável, com foco na usabilidade e na performance.
                     </p>
                     <div class="tecnologias">
                         <i class='bx bxl-html5'></i>
@@ -85,17 +91,12 @@
                     </div>
                     <a href="#" class="btn btn-project">Ver site</a>
                 </div>
+                              
                 <div class="projects-info">
                     <img src="assets/img/Telecall.png" alt="project-img">
-                    <h2>Site de Telecomunições - Faculdade</h2>
+                    <h2>Telecall - Faculdade</h2>
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-                        unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only 
-                        five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised 
-                        in the 1960s with the release of Letraset 
-                        sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker 
-                        including versions of Lorem Ipsum.
+                        O Site "Telecall" foi desenvolvido como parte de um trabalho acadêmico na faculdade. O objetivo era criar um site informativo e funcional para uma empresa de telecomunicações, destacando seus serviços e soluções tecnológicas. Trabalhei no design da interface e na implementação das funcionalidades, garantindo que o site fosse responsivo e fácil de navegar. O projeto envolveu a utilização de HTML5, CSS3 e JavaScript para construir um layout atraente e interativo, proporcionando uma experiência de usuário eficiente.
                     </p>
                     <div class="tecnologias">
                         <i class='bx bxl-html5'></i>
@@ -104,17 +105,13 @@
                     </div>
                     <a href="#" class="btn btn-project">Ver Projeto</a>
                 </div>
+                
                 <div class="projects-info">
-                    <img src="#" alt="project-img">
-                    <h2>Site de Telecomunições com Banco de dados - Faculdade</h2>
+                    <img src="assets/img/Telecompany.png" alt="project-img">
+                    <h2>Telecompany - Faculdade</h2>
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-                        unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only 
-                        five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised 
-                        in the 1960s with the release of Letraset 
-                        sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker 
-                        including versions of Lorem Ipsum.
+                        O projeto "Telecompany" foi desenvolvido como parte de um trabalho acadêmico na faculdade. O objetivo era criar um site interativo para uma empresa de telecomunicações que não apenas apresentasse informações sobre seus serviços, mas também integrasse um banco de dados para gerenciar e exibir dados dinâmicos. 
+                        Durante o desenvolvimento, implementei funcionalidades como cadastro e consulta de clientes, gerenciamento de planos e serviços, e geração de relatórios. Utilizei HTML5 e CSS3 para a estrutura e o design do site, JavaScript para a interatividade do front-end, PHP para o processamento de dados e comunicação com o banco de dados, e um sistema de banco de dados SQL para armazenar e recuperar informações.
                     </p>
                     <div class="tecnologias">
                         <i class='bx bxl-html5'></i>
@@ -125,60 +122,53 @@
                     </div>
                     <a href="#" class="btn btn-project">Ver Projeto</a>
                 </div>
+                
                 <div class="projects-info">
-                    <img src="#" alt="project-img">
-                    <h2>Aplicativo Mobile - Faculdade</h2>
+                    <img src="assets/img/App mobile.png" alt="project-img">
+                    <h2>CentralGeek - Faculdade</h2>
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-                        unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only 
-                        five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised 
-                        in the 1960s with the release of Letraset 
-                        sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker 
-                        including versions of Lorem Ipsum.
+                        O projeto "CentralGeek" foi desenvolvido como parte de um trabalho acadêmico na faculdade. O objetivo era criar um aplicativo móvel funcional e intuitivo utilizando o framework Ionic. Este projeto envolveu o desenvolvimento de uma aplicação para dispositivos móveis com uma interface moderna e responsiva.
+                        Utilizei o Ionic para criar uma experiência de usuário consistente em diferentes plataformas, combinando Angular e TypeScript para a lógica do aplicativo. O design foi aprimorado com SASS, e o Firebase foi integrado para gerenciar a autenticação de usuários e o armazenamento de dados em tempo real. Além disso, implementei APIs para consultar e exibir conteúdos dinâmicos no aplicativo, garantindo que as informações fossem sempre atualizadas e relevantes.
                     </p>
                     <div class="tecnologias">
                         <i class='bx bxl-android'></i>
                         <i class='bx bxl-angular'></i>
                         <i class='bx bxl-sass'></i>
                         <i class='bx bxl-typescript'></i>
-                        <i class='bx bxl-nodejs' style='color:#ffffff' ></i>
+                        <i class='bx bxl-nodejs' style='color:#ffffff'></i>
                         <i class="fa-brands fa-npm"></i>
+                        <i class='bx bxl-ionic' style='color:#3880ff'></i> 
+                        <i class='bx bxl-firebase' style='color:#fff'></i>
                     </div>
                     <a href="#" class="btn btn-project">Ver Projeto</a>
                 </div>
+                
                 <div class="projects-info">
                     <img src="assets/img/Agenda Online.png" alt="project-img">
-                    <h2>Serviço de Agendamento Online</h2>
+                    <h2>WP AGENDA ONLINE</h2>
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-                        unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only 
-                        five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised 
-                        in the 1960s with the release of Letraset 
-                        sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker 
-                        including versions of Lorem Ipsum.
+                        "WP AGENDA ONLINE" foi desenvolvido para facilitar a marcação de compromissos e 
+                        agendamentos através de uma plataforma web intuitiva e acessível. Utilizando WordPress como a base do sistema, 
+                        criei um site customizado para gerenciar e agendar serviços, 
+                        com integração ao WhatsApp para facilitar o contato e confirmações em tempo real. 
+                        A interface foi projetada com HTML5 e CSS3 para garantir um design responsivo e atraente, 
+                        e a plataforma foi configurada para suportar múltiplos usuários e tipos de serviços.
                     </p>
                     <div class="tecnologias">
-                        <i class='bx bxl-html5' style='color:#ffffff' ></i>
-                        <i class='bx bxl-css3' style='color:#ffffff' ></i>
+                        <i class='bx bxl-html5' style='color:#ffffff'></i>
+                        <i class='bx bxl-css3' style='color:#ffffff'></i>
                         <i class='bx bxl-wordpress'></i>
                         <i class='bx bxl-whatsapp'></i>
-                        <i class='bx bx-globe' style='color:#ffffff' ></i>
+                        <i class='bx bx-globe' style='color:#ffffff'></i>
                     </div>
                     <a href="#" class="btn btn-project">Ver site</a>
                 </div>
+                
                 <div class="projects-info">
                     <img src="assets/img/Portfolio.png" alt="project-img">
                     <h2>Portfólio</h2>
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-                        unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only 
-                        five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised 
-                        in the 1960s with the release of Letraset 
-                        sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker 
-                        including versions of Lorem Ipsum.
+                        O Portfólio é uma plataforma pessoal desenvolvida para exibir e detalhar meus projetos e habilidades como desenvolvedor. O objetivo foi criar um site que funcione como uma vitrine profissional, apresentando trabalhos anteriores, habilidades técnicas e informações de contato de maneira clara e atraente. Utilizei HTML5, CSS3 e JavaScript para construir um layout moderno e interativo. Além disso, integrei o GitHub para mostrar repositórios de código e facilitar o acesso a meus projetos públicos.
                     </p>
                     <div class="tecnologias">
                         <i class='bx bxl-html5'></i>
@@ -188,11 +178,82 @@
                     </div>
                     <a href="#" class="btn btn-project">Ver Projeto</a>
                 </div>
+                
             </div>
         </div>
     </section>
 
-    <script src="assets/js/script.js"></script>
-</body>
+    <section class="education" id="education">
+        <h2 class="heading">Educação</h2>
+            <div class="timeline-items">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2020 - 2022</div>
+                    <div class="timeline-content">
+                        <h3>Ensino médio + Cursos </h3>
+                        <p>
+                            Durante o ensino médio, foquei em estudar arduamente programação e as áreas que mais me interessavam. 
+                            Durante um bom período, fiz cursos de certificação pelo programa 
+                            <a>ONE (Oracle Next Education)</a>, 
+                            onde, por meio desses cursos, consegui me especializar como desenvolvedor full stack.
+                        </p>
+                    </div>
+                </div>
 
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023 - 2025</div>
+                    <div class="timeline-content">
+                        <h3>Ensino superior + Freelances</h3>
+                        <p>
+                            Em 2023, iniciei minha graduação em <a>Análise e Desenvolvimento de Sistemas</a>, que irei concluir em 2025. 
+                            Durante esse período, aprimorei e desenvolvi ainda mais as habilidades que já vinha estudando. 
+                            Paralelamente à faculdade, comecei a trabalhar como freelancer, desenvolvendo sites e projetos pessoais.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contato</h2>
+        <div class="contact-box">
+            <form id="contact-form" method="POST">
+                <input type="text" name="" id="name" required placeholder="Nome">
+                <input type="text" name="" id="email" required placeholder="Email">
+                <textarea name="message" id="message" rows="5" required placeholder="Texto"></textarea>
+                <button class="btn" type="submit" style="color: #222;">Enviar</button>
+                <div id="form-messages"></div>
+            </form>
+            <!-- <img src="assets/img/72f400a4-9ae6-45f0-ac1c-5b8af9a0c3b3.png" alt=""> -->
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#projects">Projetos</a> |
+            <a href="#education">Educação</a> |
+            <a href="#contact">Contato</a>
+        </nav>
+
+        <div class="social-icons-footer">
+            <a href="https://www.linkedin.com/in/gustavo-pontes-da-silva-848520263/" target="_blank">
+                <i class='bx bxl-linkedin' style='color:#ffffff'></i>
+            </a>
+            <a href="https://github.com/gusp0ntes" target="_blank"> 
+                <i class='bx bxl-github' style='color:#ffffff'></i>
+            </a>
+            <a>
+                <i class='bx bxs-envelope' style='color:#ffffff'></i>
+                gustavopontes.dev@gmail.com
+            </a>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/send_email.js"></script>
+</body>
 </html>

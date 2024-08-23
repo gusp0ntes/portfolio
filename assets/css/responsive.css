@@ -1,14 +1,14 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px),(max-width: 1024px) {
 
     ::-webkit-scrollbar {
         width: 15px;
         display: none;
     }
-    
+
     ::-webkit-scrollbar-thumb {
         background-color: var(--secondary-color);
     }
-    
+
     ::-webkit-scrollbar-track {
         background-color: var(--primary-color);
         width: 50px;
@@ -17,7 +17,7 @@
     section {
         padding: 10rem 3rem;
     }
-    
+
     .logo {
         font-size: 2rem;
     }
@@ -58,7 +58,6 @@
 
     .navbar.active {
         display: flex;
-        /* Mostrar navbar quando estiver ativo */
     }
 
     .navbar a {
@@ -100,9 +99,46 @@
         justify-content: space-between;
         width: 100%;
         margin-right: 10px;
-    
-        border: 1px solid #fff;
         border-radius: 10px;
-        padding: 2rem ;
+        padding: 2rem;
+    }
+
+    .timeline-dot {
+        height: 21px;
+        width: 21px;
+        background-color: var(--secondary-color);
+        box-shadow: 0 0 25px var(--secondary-color),
+            0 0 50px var(--secondary-color);
+        position: absolute;
+        left: calc(0% - 8px);
+        border-radius: 50%;
+        top: 10px;
+    }
+
+
+    .timeline-items::before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 100%;
+        background-color: var(--secondary-color);
+        left: 0px;
+    }
+
+    .timeline-item {
+        padding-left: 30px;
+    }
+
+    .timeline-item:nth-child(odd) {
+        padding-right: 20px;
+    }
+
+    .timeline-item:nth-child(even) {
+        padding-left: 20px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
